@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(211, 207, 207);
+  padding: 10px;
+}
+.box {
+  min-width: 300px;
+  width: 70%;
+  padding: 10px;
+  background-color: grey;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.notes-box {
+  width: 90%;
+}
+.box h1 {
+  color: rgb(236, 177, 13);
+  margin: 15px 0;
+}
+.notes-box-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.notes-box-top-text {
+  width: 90%;
+  margin-bottom: 20px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: rgb(228, 222, 222);
+  border: none;
+  padding: 7px;
+  color: rgb(58, 56, 56);
+  font-size: 16px;
+}
+.notes-box-top-button {
+  height: 38px;
+  background-color: rgb(236, 177, 13);
+  color: aliceblue;
+  border: none;
+  padding: 2px 13px;
+  border-radius: 30px;
+  font-size: 20px;
+  margin-top: -15px;
+  cursor: pointer;
+  transition: 0.35s;
+}
+.notes-box-top-button:hover {
+  background-color: rgb(192, 141, 0);
+  transition: 0.35s;
+}
+.notes-box-bottom {
+  color: aliceblue;
+  display: flex;
+
+  flex-direction: column;
+}
+.new-box-main {
+  margin: 10px 0;
+  transition: 0.35s;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  color: rgb(236, 177, 13);
+}
+@media (max-width: 500px) {
+  .new-box-main {
+    flex-direction: column;
+  }
+  .box {
+    min-width: 290px;
+    padding: 10px 0;
+  }
+  .container {
+    padding: 10px 0;
+  }
+}
+.new-box-main:hover {
+  transition: 0.35s;
+  background-color: rgba(178, 180, 182, 0.479);
+  color: rgb(134, 101, 10);
+}
+.date-box {
+  color: aliceblue;
+}
+.new-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.new-box button {
+  min-height: 30px;
+  height: 30px;
+  min-width: 30px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  transition: 0.35s;
+  background-color: rgb(196, 195, 195);
+  margin: 10px;
+}
+.new-box button:hover {
+  background-color: rgb(172, 126, 2);
+  transition: 0.35s;
+}
